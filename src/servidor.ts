@@ -6,7 +6,7 @@ const aplicacao = criarAplicacao();
 
 async function iniciar() {
   try {
-    await aplicacao.listen({ port: ambiente.porta, host: '0.0.0.0' });
+    await aplicacao.listen({ port: ambiente.porta, host: '127.0.0.1' });
   } catch (erro) {
     aplicacao.log.error(erro);
     process.exitCode = 1;
