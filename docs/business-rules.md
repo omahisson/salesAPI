@@ -68,9 +68,9 @@ O serviço não fará atualizações automáticas de vendas existentes.
 
 ## 5. Concorrência e consistência
 
-A tabela `sales` possuirá uma restrição:
+A tabela `vendas` possuirá uma restrição:
 
-`UNIQUE(platform, sale_id)`
+`UNIQUE(plataforma, id_venda)`
 
 A implementação utilizará uma tentativa de inserção atômica no banco de dados, com tratamento de conflito de unicidade.
 

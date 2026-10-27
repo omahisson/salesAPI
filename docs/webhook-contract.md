@@ -104,7 +104,7 @@ Comportamento esperado:
 
 Para comparar notificações repetidas, serão considerados `amountCents`, `currency` e `paidAt`, após as normalizações estabelecidas.
 
-O PostgreSQL deverá garantir a unicidade de `(platform, sale_id)` por meio de uma restrição UNIQUE, inclusive em requisições concorrentes.
+O PostgreSQL deverá garantir a unicidade de `(plataforma, id_venda)` por meio de uma restrição UNIQUE, inclusive em requisições concorrentes.
 
 ## 6. Decisões e limitações
 
